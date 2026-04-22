@@ -18,7 +18,7 @@ export default function About({ sectionRef }) {
           backgroundSize: "56px 100px",
         }} />
 
-      <div className="max-w-4xl mx-auto relative z-10">
+      <div className="max-w-7xl mx-auto relative z-10">
 
         {/* Header */}
         <div className="text-center mb-14">
@@ -36,18 +36,18 @@ export default function About({ sectionRef }) {
 
             {/* Riwayat Keluarga */}
             <div className={`rounded-2xl p-6 flex-1 ${base}`} style={{ fontFamily: "'DM Sans',sans-serif" }}>
-              <p className="text-sm font-bold text-orange-400 uppercase tracking-widest mb-4">
+              <p className="text-base font-bold text-orange-400 uppercase tracking-widest mb-4">
                 Riwayat Keluarga
               </p>
-              <p className="text-sm leading-relaxed">{about.family}</p>
+              <p className="text-base leading-relaxed">{about.family}</p>
             </div>
 
             {/* Cita-cita */}
             <div className={`rounded-2xl p-6 flex-1 ${base}`} style={{ fontFamily: "'DM Sans',sans-serif" }}>
-              <p className="text-sm font-bold text-orange-400 uppercase tracking-widest mb-4">
+              <p className="text-base font-bold text-orange-400 uppercase tracking-widest mb-4">
                 Cita-cita / Tujuan Karier
               </p>
-              <p className="text-sm leading-relaxed italic text-gray-400">
+              <p className="text-base leading-relaxed italic text-gray-400">
                 "{about.goal}"
               </p>
             </div>
@@ -56,16 +56,16 @@ export default function About({ sectionRef }) {
 
           {/* CENTER COLUMN — PENDIDIKAN (MAIN FOCUS) */}
           <div className={`rounded-2xl p-8 ${base} flex flex-col h-full bg-gradient-to-b from-orange-900/10 to-orange-900/5 border-2 border-orange-500/40`} style={{ fontFamily: "'DM Sans',sans-serif" }}>
-            <p className="text-sm font-bold text-orange-400 uppercase tracking-widest mb-5">
+            <p className="text-base font-bold text-orange-400 uppercase tracking-widest mb-5">
               Riwayat Pendidikan
             </p>
             <div className="relative pl-7 border-l-2 border-orange-500/50 space-y-5">
               {about.education.map((e, i) => (
                 <div key={i} className="relative pb-1">
                   <span className="absolute -left-[1.75rem] top-1 w-3.5 h-3.5 rounded-full bg-orange-500 ring-4 ring-orange-500/20 shadow-lg shadow-orange-500/30" />
-                  <p className="text-sm text-orange-400 font-mono font-bold mb-1">{e.year}</p>
-                  <p className="text-base font-bold text-white mb-0.5">{e.school}</p>
-                  {e.major && <p className="text-sm text-gray-400">{e.major}</p>}
+                  <p className="text-base text-orange-400 font-mono font-bold mb-1">{e.year}</p>
+                  <p className="text-lg font-bold text-white mb-0.5">{e.school}</p>
+                  {e.major && <p className="text-base text-gray-400">{e.major}</p>}
                 </div>
               ))}
             </div>
@@ -77,10 +77,10 @@ export default function About({ sectionRef }) {
             {/* Hobi + Minat */}
             <div className={`rounded-2xl p-6 flex-1 ${base}`} style={{ fontFamily: "'DM Sans',sans-serif" }}>
               <div className="mb-6">
-                <p className="text-sm font-bold text-orange-400 uppercase tracking-widest mb-3">Hobi</p>
+                <p className="text-base font-bold text-orange-400 uppercase tracking-widest mb-3">Hobi</p>
                 <ul className="space-y-2">
                   {about.hobbies.map((h) => (
-                    <li key={h} className="flex items-center gap-2 text-sm">
+                    <li key={h} className="flex items-center gap-2 text-base">
                       <span className="w-2 h-2 rounded-full bg-orange-400 flex-shrink-0" />
                       {h}
                     </li>
@@ -88,10 +88,10 @@ export default function About({ sectionRef }) {
                 </ul>
               </div>
               <div className="border-t border-orange-900/30 pt-5">
-                <p className="text-sm font-bold text-orange-400 uppercase tracking-widest mb-3">Minat</p>
+                <p className="text-base font-bold text-orange-400 uppercase tracking-widest mb-3">Minat</p>
                 <ul className="space-y-2">
                   {about.interests.map((i) => (
-                    <li key={i} className="flex items-center gap-2 text-sm">
+                    <li key={i} className="flex items-center gap-2 text-base">
                       <span className="w-2 h-2 rounded-full bg-orange-400 flex-shrink-0" />
                       {i}
                     </li>
@@ -102,13 +102,13 @@ export default function About({ sectionRef }) {
 
             {/* Kelebihan Diri */}
             <div className={`rounded-2xl p-6 flex-1 flex flex-col gap-4 ${base}`} style={{ fontFamily: "'DM Sans',sans-serif" }}>
-              <p className="text-sm font-bold text-orange-400 uppercase tracking-widest">Kelebihan Diri</p>
+              <p className="text-base font-bold text-orange-400 uppercase tracking-widest">Kelebihan Diri</p>
 
               <div>
-                <p className="text-sm uppercase tracking-widest mb-3 text-gray-500 font-bold">Soft Skills</p>
-                <ul className="space-y-1.5">
+                <p className="text-base uppercase tracking-widest mb-3 text-gray-500 font-bold">Soft Skills</p>
+                <ul className="space-y-2">
                   {about.softSkills.map((s) => (
-                    <li key={s} className="flex items-center gap-2 text-sm">
+                    <li key={s} className="flex items-center gap-2 text-base">
                       <span className="w-2 h-2 rounded-full bg-orange-400 flex-shrink-0" />
                       {s}
                     </li>
@@ -117,10 +117,10 @@ export default function About({ sectionRef }) {
               </div>
 
               <div className="border-t border-orange-900/30 pt-4">
-                <p className="text-sm uppercase tracking-widest mb-3 text-gray-500 font-bold">Hard Skills</p>
-                <ul className="space-y-1.5">
+                <p className="text-base uppercase tracking-widest mb-3 text-gray-500 font-bold">Hard Skills</p>
+                <ul className="space-y-2">
                   {about.hardSkills.map((s) => (
-                    <li key={s} className="flex items-center gap-2 text-sm">
+                    <li key={s} className="flex items-center gap-2 text-base">
                       <span className="w-2 h-2 rounded-full bg-orange-400 flex-shrink-0" />
                       {s}
                     </li>
