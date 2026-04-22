@@ -15,7 +15,7 @@ export default function Navbar({ active, onNavigate }) {
     <header className="fi fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-[#07070f]/95 border-b border-gray-800/20">
       <nav className="w-full px-4 sm:px-6 h-12 flex items-center justify-between">
         <span className="font-bold text-lg text-orange-400" style={{ fontFamily: "'Syne',sans-serif" }}>
-          {DATA.nickname}
+          R.N.A
         </span>
 
         {/* Desktop */}

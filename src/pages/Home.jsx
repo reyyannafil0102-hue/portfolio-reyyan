@@ -80,11 +80,15 @@ export default function Home({ sectionRef, onNavigate }) {
             style={{ fontFamily: "'Inter',sans-serif" }}>
             Hello, I'm
           </h1>
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-black leading-tight mb-4 text-white"
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-black leading-tight mb-2 text-white"
             style={{ fontFamily: "'Inter',sans-serif" }}>
             {DATA.name}
             <span className="blink text-orange-400 ml-1">|</span>
           </h1>
+          <p className="text-orange-400 text-lg sm:text-xl md:text-2xl font-bold mb-4"
+            style={{ fontFamily: "'Inter',sans-serif" }}>
+            "Reyyan"
+          </p>
           <p className="text-gray-400 text-base sm:text-lg mb-2 font-semibold"
             style={{ fontFamily: "'Inter',sans-serif" }}>
             {DATA.tagline}
