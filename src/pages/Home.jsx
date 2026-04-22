@@ -104,10 +104,6 @@ export default function Home({ sectionRef, onNavigate }) {
               className="btn-p px-6 py-2.5 rounded-full text-sm font-semibold text-white">
               Lihat Karya Saya
             </button>
-            <button onClick={() => onNavigate("CV")}
-              className="btn-o px-6 py-2.5 rounded-full text-sm font-semibold text-gray-300">
-              Lihat CV
-            </button>
           </div>
 
           {/* Social icons */}
