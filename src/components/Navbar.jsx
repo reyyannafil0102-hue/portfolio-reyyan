@@ -1,7 +1,7 @@
 import { useState } from "react";
 import DATA from "../data/data";
 
-const NAV = ["Home", "About", "Skills", "Portfolio", "CV"];
+const NAV = ["Home", "About", "Skills", "Portfolio", "CV", "Contact"];
 
 export default function Navbar({ active, onNavigate }) {
   const [menuOpen, setMenuOpen] = useState(false);

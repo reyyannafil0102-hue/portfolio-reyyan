@@ -5,6 +5,7 @@ import About    from "./pages/About";
 import Skills   from "./pages/Skills";
 import Portfolio from "./pages/Portfolio";
 import CV       from "./pages/CV";
+import Contact  from "./pages/Contact";
 import "./styles/global.css";
 
 export default function App() {
@@ -56,6 +57,8 @@ export default function App() {
       <Portfolio sectionRef={setRef("Portfolio")} />
       <SectionSeparator />
       <CV sectionRef={setRef("CV")} />
+      <SectionSeparator />
+      <Contact sectionRef={setRef("Contact")} />
 
       {/* Footer */}
       <footer className="border-t border-gray-800/40 py-8 text-center">
