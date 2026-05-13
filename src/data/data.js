@@ -1,5 +1,5 @@
 const DATA = {
-  name: "Reyyan Nafil Adiara",
+  name: "Reyyan Nafil Adiarsa",
   nickname: "RNA",
   tagline: "Network & Cyber Security Enthusiast",
   description:
